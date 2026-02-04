@@ -1,0 +1,4 @@
+{
+  "buildCommand": "yarn build:website",
+  "outputDirectory": "apps/website/dist"
+}
