@@ -1,0 +1,23 @@
+{
+  "name": "poko-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "packageManager": "yarn@1.22.22",
+  "scripts": {
+    "dev:extension": "yarn workspace @poko/extension dev",
+    "build:extension": "yarn workspace @poko/extension build",
+    "test:extension": "yarn workspace @poko/extension test",
+    "dev:website": "yarn workspace @poko/website dev",
+    "build:website": "yarn workspace @poko/website build",
+    "test:website": "yarn workspace @poko/website test",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test",
+    "start": "yarn dev:website"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "jest-environment-jsdom": "^30.2.0"
+  }
+}
